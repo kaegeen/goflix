@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFlix - Movie Collection</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GoFlix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#movie-list">Movies</a></li>
+                    <li><a href="#login-section">Login</a></li>
+                    <li><a href="#add-movie-section">Add Movie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Movie List Section -->
+        <section id="movie-list">
+            <div class="container">
+                <h2>Movie Collection</h2>
+                <div id="movies">
+                    <!-- Movie items will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login-section">
+            <div class="container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+                <div id="login-message"></div>
+            </div>
+        </section>
+
+        <!-- Add Movie Section -->
+        <section id="add-movie-section">
+            <div class="container">
+                <h2>Add a Movie</h2>
+                <form id="add-movie-form">
+                    <label for="title">Movie Title</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="release-date">Release Date</label>
+                    <input type="date" id="release-date" name="release-date" required>
+
+                    <label for="duration">Duration (minutes)</label>
+                    <input type="number" id="duration" name="duration" required>
+
+                    <label for="trailer-url">Trailer URL</label>
+                    <input type="url" id="trailer-url" name="trailer-url" required>
+
+                    <button type="submit">Add Movie</button>
+                </form>
+                <div id="add-movie-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GoFlix</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
